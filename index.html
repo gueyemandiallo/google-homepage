@@ -39,7 +39,7 @@
             cursor: pointer;
         }
 
-        .navbar li a:hover{
+        .navbar li a:hover {
             text-decoration: underline;
         }
 
@@ -49,7 +49,7 @@
             opacity: 70%;
         }
 
-        .profile{
+        .profile {
             width: 100%;
             height: auto;
             /* padding-top: 3px; */
@@ -58,11 +58,102 @@
         }
 
         /* center  */
-        /* .center {
+        .center {
             margin: auto;
             width: 20%;
-            padding: 10%;
-        } */
+            padding-top: 50px;
+        }
+
+        #logo {
+            margin: 15px;
+        }
+
+        #google_search {
+            border-radius: 25px;
+            border: 1px solid #ddd;
+            margin-top: 10px;
+            padding: 20px;
+            width: 560px;
+            height: 45px;
+            position: relative;
+            left: -135px;
+            padding-left: 40px;
+
+        }
+
+        #google_search:hover {
+            box-shadow: 0 0 10px 0 rgba(0, 0, 0, .1);
+        }
+
+        #google_search:focus {
+            outline: none;
+        }
+
+
+        #iconSearch {
+            opacity: 50%;
+            position: relative;
+            left: -125px;
+            top: -34px;
+        }
+
+        #iconVocal {
+            position: relative;
+            top: -59px;
+            left: 385px;
+        }
+
+        #imageIconVocal {
+            width: 23px;
+
+        }
+
+        #input {
+            height: 75px;
+        }
+
+        .buttons {
+            width: 200%;
+        }
+
+        .buttons button {
+            background-color: #f8f9fa;
+            border: 1px solid #f8f9fa;
+            border-radius: 4px;
+            color: #3c4043;
+            font-family: arial, sans-serif;
+            font-size: 14px;
+            margin: 11px 4px;
+            padding: 0 16px;
+            height: 36px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #f8f9fa;
+            border: 1px solid #ddd;
+            box-shadow: 0 0 10px 0 rgba(0, 0, 0, .1);
+        }
+
+
+        #translaters {
+            display: inline-block;
+            line-height: 28px;
+            font-size: small;
+            padding-left: 40px;
+        }
+
+        #translaters a {
+            padding: 0 3px;
+            color: #1a0dab;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        #translaters a:hover {
+            text-decoration: underline;
+        }
+
 
         /* footer {
             position: absolute;
@@ -95,7 +186,8 @@
     <!-- Navigation bar -->
     <div class="navbar">
         <ul>
-            <li style="padding-top: 0; padding-right: 15px;"><a href="#"><img class="profile" src="/images/heroes.png" alt=""></a></li>
+            <li style="padding-top: 0; padding-right: 15px;"><a href="#"><img class="profile" src="/images/heroes.png"
+                        alt=""></a></li>
             <li><a href="#"><img class="dots" src="/images/dots.png" alt=""></a></li>
             <li style="padding-right: 15px;"><a href="#">Images</a></li>
             <li><a href="#">Gmail</a></li>
@@ -104,13 +196,29 @@
 
 
     <!-- the center of google homepage -->
-    <!-- <div class="center">
-        <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"
-            alt="the google logo">
-        <form action="#">
+    <div class="center">
+        <div id="logo">
+            <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"
+                alt="the google logo">
+        </div>
+        <div id="input">
             <input type="text" name="" id="google_search">
-        </form>
-    </div> -->
+            <div id="iconSearch"><img src="/images/search.png" alt=""></div>
+            <div id="iconVocal"><img id="imageIconVocal" src="/images/googlemic.png" alt=""></div>
+        </div>
+        <div class="buttons">
+            <button>Recherche Google</button>
+            <button>J'ai de la chance</button>
+        </div>
+        <div id="translaters">
+            <p>Google disponible en : <a href="#">English</a> <a href="#">Wolof</a></p>
+        </div>
+
+
+    </div>
+
+
+
 
     <!-- Footer -->
     <!-- <footer>
