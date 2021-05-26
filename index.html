@@ -1,181 +1,7 @@
 <html lang="en">
 
 <head>
-    <style>
-        body {
-            font-family: arial, sans-serif;
-            color: #222;
-            margin: 0;
-        }
-
-        /* navbar */
-        .navbar {
-            line-height: 24px;
-            vertical-align: middle;
-        }
-
-        .navbar ul {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-            overflow: hidden;
-            /* background-color: #333; */
-        }
-
-        .navbar li {
-            float: right;
-            padding: 5px;
-        }
-
-        .navbar li a {
-            display: inline-block;
-            color: rgba(0, 0, 0, 0.87);
-            font-family: arial, sans-serif;
-            font-size: 13px;
-            width: 33px;
-            text-align: center;
-            padding: 15px 5px;
-            text-decoration: none;
-            cursor: pointer;
-        }
-
-        .navbar li a:hover {
-            text-decoration: underline;
-        }
-
-        .dots {
-            width: 50%;
-            padding-top: 3px;
-            opacity: 70%;
-        }
-
-        .profile {
-            width: 100%;
-            height: auto;
-            /* padding-top: 3px; */
-            border: 1px solid black;
-            border-radius: 50%;
-        }
-
-        /* center  */
-        .center {
-            margin: auto;
-            width: 20%;
-            padding-top: 50px;
-        }
-
-        #logo {
-            margin: 15px;
-        }
-
-        #google_search {
-            border-radius: 25px;
-            border: 1px solid #ddd;
-            margin-top: 10px;
-            padding: 20px;
-            width: 560px;
-            height: 45px;
-            position: relative;
-            left: -135px;
-            padding-left: 40px;
-
-        }
-
-        #google_search:hover {
-            box-shadow: 0 0 10px 0 rgba(0, 0, 0, .1);
-        }
-
-        #google_search:focus {
-            outline: none;
-        }
-
-
-        #iconSearch {
-            opacity: 50%;
-            position: relative;
-            left: -125px;
-            top: -34px;
-        }
-
-        #iconVocal {
-            position: relative;
-            top: -59px;
-            left: 385px;
-        }
-
-        #imageIconVocal {
-            width: 23px;
-
-        }
-
-        #input {
-            height: 75px;
-        }
-
-        .buttons {
-            width: 200%;
-        }
-
-        .buttons button {
-            background-color: #f8f9fa;
-            border: 1px solid #f8f9fa;
-            border-radius: 4px;
-            color: #3c4043;
-            font-family: arial, sans-serif;
-            font-size: 14px;
-            margin: 11px 4px;
-            padding: 0 16px;
-            height: 36px;
-            cursor: pointer;
-        }
-
-        button:hover {
-            background-color: #f8f9fa;
-            border: 1px solid #ddd;
-            box-shadow: 0 0 10px 0 rgba(0, 0, 0, .1);
-        }
-
-
-        #translaters {
-            display: inline-block;
-            line-height: 28px;
-            font-size: small;
-            padding-left: 40px;
-        }
-
-        #translaters a {
-            padding: 0 3px;
-            color: #1a0dab;
-            text-decoration: none;
-            cursor: pointer;
-        }
-
-        #translaters a:hover {
-            text-decoration: underline;
-        }
-
-
-        /* footer {
-            position: absolute;
-            bottom: 0;
-            width: 100%;
-            text-align: center;
-            display: block;
-            color: black;
-        }
-
-        footer ul {
-            background-color: #ddd;
-        } */
-
-        /* footer_bottom */
-        /* .footer li a {
-            color: black;
-            padding: 14px 15px;
-            text-decoration: none;
-        } */
-    </style>
-
+    <link rel="stylesheet" type="text/css" href="style.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -186,20 +12,21 @@
     <!-- Navigation bar -->
     <div class="navbar">
         <ul>
-            <li style="padding-top: 0; padding-right: 15px;"><a href="#"><img class="profile" src="/images/heroes.png"
-                        alt=""></a></li>
-            <li><a href="#"><img class="dots" src="/images/dots.png" alt=""></a></li>
+            <li style="padding-top: 0; padding-right: 15px;">
+                <a href="#"><img class="profile" src="/images/heroes.png" alt=""></a>
+            </li>
+            <li>
+                <a href="#"><img class="dots" src="/images/dots.png" alt=""></a>
+            </li>
             <li style="padding-right: 15px;"><a href="#">Images</a></li>
             <li><a href="#">Gmail</a></li>
         </ul>
     </div>
 
-
     <!-- the center of google homepage -->
     <div class="center">
         <div id="logo">
-            <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"
-                alt="the google logo">
+            <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="the google logo">
         </div>
         <div id="input">
             <input type="text" name="" id="google_search">
@@ -213,29 +40,26 @@
         <div id="translaters">
             <p>Google disponible en : <a href="#">English</a> <a href="#">Wolof</a></p>
         </div>
-
-
     </div>
 
-
-
-
     <!-- Footer -->
-    <!-- <footer>
-        <div class="footer">
+    <div class="country">
+        <span>Sénégal</span>
+    </div>
+    <div class="footer">
+        <footer>
             <ul>
-                <li><a href="#">A propos</a></li>
+                <li><a href="#">À propos</a></li>
                 <li><a href="#">Publicité</a></li>
                 <li><a href="#">Entreprise</a></li>
-                <li><a href="#">Comment fonctionne la recherche google?</a></li>
+                <li><a href="#">Comment fonctionne la recherche google ?</a></li>
 
                 <li style="float: right;"><a href="#">Paramètres</a></li>
                 <li style="float: right;"><a href="#">Conditions</a></li>
                 <li style="float: right;"><a href="#">Confidentialité</a></li>
             </ul>
-        </div>
-
-    </footer> -->
+        </footer>
+    </div>
 </body>
 
 </html>
